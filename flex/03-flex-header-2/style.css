@@ -6,12 +6,17 @@ body {
   margin: 0;
   background: #eee;
   font-family: Besley, serif;
+  
 }
 
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  padding: 8px;
+  display: flex;
+  align-items: center;/*vertically centered*/
+  flex-direction: row;
 }
 
 .profile-image {
@@ -41,8 +46,22 @@ a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+  margin: 0px 0px;/*this adds margin between links*/
 }
 
 ul {
   list-style-type: none;
+  display: flex;/*for the list to change into columns*/
+  /*margin: 0px 30px;/*this adds margin around the complete list*/
+  flex-direction: row;
+  gap: 16px;/*adds space between links*/
+}
+
+.right-corner{
+  display: flex;
+  align-items: center;/*vertically centered*/
+  justify-content: center;/*horizontally centered*/
+  margin-left: auto;/*moves to the right and automatically moves with the size of the window*/
+  flex-shrink: 0;
+  gap: 16px;
 }
